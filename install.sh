@@ -83,9 +83,9 @@ linkall() {
   return 0
 }
 
+download "${REMOTE_URL}" "${DOTFILES}"
 linkall
 
-download "${REMOTE_URL}" "${DOTFILES}"
 download https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 download https://github.com/pyenv/pyenv.git ~/.pyenv
 
