@@ -63,7 +63,7 @@ link() {
     else
       return 0
     fi
-  elif [ -e ~/$1 ]; then
+  elif [ -f ~/$1 ]; then
     # file/dir already exists. backup it and symlink to the new one
     mv ~/.$1 ~/.$1.old
   fi
