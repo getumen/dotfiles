@@ -1,6 +1,6 @@
 alias ls='ls -G'
-alias l='ls'
-alias ll='ls -la'
+alias l='ls -G'
+alias ll='ls -laG'
 alias rm='rm -i'
 
 PS1="\h:\w $ "
