@@ -1,6 +1,6 @@
 
 if [ -f $HOME/.tokens ]; then
-  source .tokens
+  source $HOME/.tokens
 fi
 
 
