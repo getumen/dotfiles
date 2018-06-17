@@ -1,4 +1,5 @@
 source $HOME/.bash_shared
 
-if [ -d '$HOME/google-cloud-sdk' ];then source .gcprc 
+if [ -d $HOME/google-cloud-sdk ];then source .gcprc 
+else echo "GCP Missing!"
 fi
