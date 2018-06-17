@@ -41,10 +41,10 @@ echo Installing dotfiles into $DOTFILES
 
 download() {
   if ! [[ -d $2 ]]; then
-    echo "Downloading dotfiles..."
+    echo "Downloading $1"
     git clone $1 $2
   else
-    echo "pulling dotfiles"
+    echo "pulling $1"
     cd $2
     git pull
   fi
