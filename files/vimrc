@@ -7,7 +7,6 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'udalov/kotlin-vim'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
-
 call vundle#end()
 filetype plugin indent on
 
@@ -55,6 +54,7 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 syntax on
 
 set statusline+=%#warningmsg#
+
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
