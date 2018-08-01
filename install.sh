@@ -98,4 +98,5 @@ else
   source "$HOME/.sdkman/bin/sdkman-init.sh"
 fi
 
+curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
 
