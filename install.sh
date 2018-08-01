@@ -90,6 +90,8 @@ download https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 download https://github.com/pyenv/pyenv.git ~/.pyenv
 download https://github.com/pyenv/pyenv-virtualenv.git $HOME/.pyenv/plugins/pyenv-virtualenv
 
+:
+
 if [ -d $HOME/.sdkman ]; then
   echo "sdkman found!"
 else
@@ -97,5 +99,4 @@ else
   curl -s "https://get.sdkman.io" | bash
   source "$HOME/.sdkman/bin/sdkman-init.sh"
 fi
-
 
