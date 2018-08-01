@@ -98,5 +98,6 @@ else
   curl -s "https://get.sdkman.io" | bash
   source "$HOME/.sdkman/bin/sdkman-init.sh"
 fi
-
-curl -sL https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
+if [ ! -d $HOME/.zplug ]; then 
+  curl -sL https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
+fi
