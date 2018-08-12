@@ -146,6 +146,9 @@ esac
 
 # vim:set ft=zsh:
 
+if [ -f $HOME/.tokens ]; then
+  source $HOME/.tokens
+fi
 
 if
   command -v pyenv 1>/dev/null 2>&1;
