@@ -10,6 +10,7 @@ export PATH="$HOME/.local/bin:$PATH"
 source $HOME/.zplug/init.zsh
 
 alias cheat='(){ curl cheat.sh/$1 }'
+alias f='fuck'
 
 zplug "zsh-users/zsh-syntax-highlighting"
 zplug "zsh-users/zsh-autosuggestions"
@@ -151,6 +152,10 @@ esac
 if [ -f $HOME/.tokens ]; then
   source $HOME/.tokens
 fi
+
+eval $(thefuck --alias)
+# You can use whatever you want as an alias, like for Mondays:
+eval $(thefuck --alias FUCK)
 
 if
   command -v pyenv 1>/dev/null 2>&1;
