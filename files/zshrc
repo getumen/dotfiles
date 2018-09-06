@@ -9,6 +9,7 @@ export PATH="$HOME/.local/bin:$PATH"
 
 source $HOME/.zplug/init.zsh
 
+alias cheat='(){ curl cheat.sh/$1 }'
 
 zplug "zsh-users/zsh-syntax-highlighting"
 zplug "zsh-users/zsh-autosuggestions"
@@ -147,6 +148,9 @@ esac
 
 # vim:set ft=zsh:
 
+if [ -f $HOME/.tokens ]; then
+  source $HOME/.tokens
+fi
 
 if
   command -v pyenv 1>/dev/null 2>&1;
