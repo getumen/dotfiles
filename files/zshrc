@@ -10,7 +10,10 @@ export GOPATH="$HOME/go"
 
 source $HOME/.zplug/init.zsh
 
-alias cheat='(){ curl cheat.sh/$1 }'
+function cheat () {
+    curl cheat.sh/$1
+}
+
 alias f='fuck'
 
 zplug "zsh-users/zsh-syntax-highlighting"
