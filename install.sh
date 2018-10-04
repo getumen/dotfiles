@@ -87,7 +87,7 @@ download "${REMOTE_URL}" "${DOTFILES}"
 linkall
 
 download https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-download git clone https://github.com/riywo/anyenv ~/.anyenv
+download https://github.com/riywo/anyenv ~/.anyenv
 download https://github.com/pyenv/pyenv.git ~/.pyenv
 download https://github.com/pyenv/pyenv-virtualenv.git $HOME/.pyenv/plugins/pyenv-virtualenv
 
