@@ -6,10 +6,14 @@ alias rm='rm -i'
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
+export GOPATH="$HOME/go"
 
 source $HOME/.zplug/init.zsh
 
-alias cheat='(){ curl cheat.sh/$1 }'
+function cheat () {
+    curl cheat.sh/$1
+}
+
 alias f='fuck'
 
 zplug "zsh-users/zsh-syntax-highlighting"
@@ -156,6 +160,9 @@ fi
 eval $(thefuck --alias)
 # You can use whatever you want as an alias, like for Mondays:
 eval $(thefuck --alias FUCK)
+
+export PATH="$HOME/.anyenv/bin:$PATH"
+eval "$(anyenv init -)"
 
 if
   command -v pyenv 1>/dev/null 2>&1;
