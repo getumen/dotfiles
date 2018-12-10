@@ -157,8 +157,8 @@ if [ -f $HOME/.tokens ]; then
   source $HOME/.tokens
 fi
 
-export PATH="$HOME/.anyenv/bin:$PATH"
-eval "$(anyenv init -)"
+# export PATH="$HOME/.anyenv/bin:$PATH"
+# eval "$(anyenv init -)"
 
 if
   command -v pyenv 1>/dev/null 2>&1;
@@ -170,8 +170,8 @@ fi
 source "$HOME/.sdkman/bin/sdkman-init.sh"
 export SDKMAN_DIR="$HOME/.sdkman"
 
-eval $(thefuck --alias)
+# eval $(thefuck --alias)
 # You can use whatever you want as an alias, like for Mondays:
-eval $(thefuck --alias FUCK)
+# eval $(thefuck --alias FUCK)
 
 
