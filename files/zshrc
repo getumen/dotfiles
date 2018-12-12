@@ -19,7 +19,7 @@ alias f='fuck'
 zplug "zsh-users/zsh-syntax-highlighting"
 zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-completions"
-zplug "b4b4r07/enhancd", use:enhancd.sh
+zplug "b4b4r07/enhancd", use:init.sh
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
@@ -157,8 +157,8 @@ if [ -f $HOME/.tokens ]; then
   source $HOME/.tokens
 fi
 
-# export PATH="$HOME/.anyenv/bin:$PATH"
-# eval "$(anyenv init -)"
+export PATH="$HOME/.anyenv/bin:$PATH"
+eval "$(anyenv init -)"
 
 if
   command -v pyenv 1>/dev/null 2>&1;
