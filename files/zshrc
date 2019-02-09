@@ -19,8 +19,6 @@ if [ -f $HOME/.gcprc ]; then
   source $HOME/.gcprc
 fi
 
-alias f='fuck'
-
 zplug "zsh-users/zsh-syntax-highlighting"
 zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-completions"
@@ -158,9 +156,6 @@ esac
 
 # vim:set ft=zsh:
 
-if [ -f $HOME/.tokens ]; then
-  source $HOME/.tokens
-fi
 
 export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
@@ -175,8 +170,8 @@ fi
 source "$HOME/.sdkman/bin/sdkman-init.sh"
 export SDKMAN_DIR="$HOME/.sdkman"
 
-# eval $(thefuck --alias)
-# You can use whatever you want as an alias, like for Mondays:
-# eval $(thefuck --alias FUCK)
+if [ -f $HOME/.tokens ]; then
+  source $HOME/.tokens
+fi
 
 
