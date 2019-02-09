@@ -24,7 +24,7 @@ alias f='fuck'
 zplug "zsh-users/zsh-syntax-highlighting"
 zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-completions"
-zplug "b4b4r07/enhancd", use:enhancd.sh
+zplug "b4b4r07/enhancd", use:init.sh
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
@@ -175,8 +175,8 @@ fi
 source "$HOME/.sdkman/bin/sdkman-init.sh"
 export SDKMAN_DIR="$HOME/.sdkman"
 
-eval $(thefuck --alias)
+# eval $(thefuck --alias)
 # You can use whatever you want as an alias, like for Mondays:
-eval $(thefuck --alias FUCK)
+# eval $(thefuck --alias FUCK)
 
 
