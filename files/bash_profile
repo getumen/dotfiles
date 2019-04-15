@@ -3,3 +3,5 @@ source $HOME/.bash_shared
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/ynakazat/.sdkman"
 [[ -s "/Users/ynakazat/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/ynakazat/.sdkman/bin/sdkman-init.sh"
+
+export PATH="$HOME/.cargo/bin:$PATH"
