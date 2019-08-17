@@ -1,6 +1,6 @@
 
-if [ -f $HOME/.tokens ]; then
-  source $HOME/.tokens
+if [ -f $HOME/.local_bashrc ]; then
+  source $HOME/.local_bashrc
 fi
 
 
@@ -117,12 +117,3 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-  eval "$(pyenv virtualenv-init -)"
-fi
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-source "$HOME/.sdkman/bin/sdkman-init.sh"
-export SDKMAN_DIR="$HOME/.sdkman"
