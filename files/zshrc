@@ -140,7 +140,13 @@ esac
 
 # vim:set ft=zsh:
 
-if [ -f $HOME/.local_zshrc ]; then
-  source $HOME/.local_zshrc
+if [ -f $HOME/.local_zshrc.sh ]; then
+  source $HOME/.local_zshrc.sh
 fi
 
+export EDITOR=vim
+
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/yoshihiro/.sdkman"
+[[ -s "/home/yoshihiro/.sdkman/bin/sdkman-init.sh" ]] && source "/home/yoshihiro/.sdkman/bin/sdkman-init.sh"
