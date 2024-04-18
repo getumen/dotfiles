@@ -87,7 +87,6 @@ download "${REMOTE_URL}" "${DOTFILES}"
 linkall
 
 download https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-download https://github.com/riywo/anyenv ~/.anyenv
 
 if [ ! -d $HOME/.zplug ]; then 
   curl -sL https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
